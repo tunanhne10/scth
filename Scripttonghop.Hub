@@ -70,8 +70,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })   AddButton(Tab1o, {
      Name = "HOHO Hub",
     Callback = function()
-	  _G.HohoVersion = "v4"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
   end
   })   AddButton(Tab3o, {
      Name = "FIX LAG",
@@ -93,10 +92,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
   end
+  })
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab1o, {
-     Name = "Nhìn Con Cẹc Dùng Đi",
+     Name = "Nhìn Con Cẹc",
      Options = {"Melee", "Sword", "Bloxfruit", "Gun"},
      Default = "Melee",
      Callback = function()
@@ -105,8 +105,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 
 ----- Section 
    
-   Section = AddSection(Tab1o, {"Nhìn Con Cẹc Dùng Đi"})          
+   Section = AddSection(Tab1o, {"Nhìn Con Cẹc "})          
 
 ----- Paragraph 
                     
-   Paragraph = AddParagraph(Farm, {"a", ""})
+   Paragraph = AddParagraph(Farm, {"AnhTuan", ""})
