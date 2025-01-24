@@ -2,7 +2,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "TUAN ANH",
+         Title = "TUẤN ANH Hub",
          Animation = "Script Anh Tuấn Dz"
          },
         Key = {
@@ -30,9 +30,9 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "MAIN1"})
-     local Tab2o = MakeTab({Name = "MAIN2"})
-     local Tab3o = MakeTab({Name = "MAIN3"})
+     local Tab1o = MakeTab({Name = "Script Hay Dùng Nhất"})
+     local Tab2o = MakeTab({Name = "Script Tổng Hợp"})
+     local Tab3o = MakeTab({Name = "Script Tổng Hợp"})
      
      
 -------TOGGLE 
@@ -67,22 +67,37 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
   end
-  })   AddButton(Tab3o, {
-     Name = "Cuttay Hub Auto Mirage",
+  })   AddButton(Tab1o, {
+     Name = "HOHO Hub",
     Callback = function()
-	  loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/main/Cuttayhubreal.lua'))
+	  _G.HohoVersion = "v4"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
   end
   })   AddButton(Tab3o, {
      Name = "FIX LAG",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
   end
-  })
+  })   AddButton(Tab2o, {
+     Name = "Aim Buddy Gun" Key:Kao",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaodontsuyy/BloxFruit/refs/heads/main/Kaohub.lua"))
+  end
+  })   AddButton(Tab1o, {
+     Name = "Rubu Hub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RubuHubV3.txt"))()
+  end 
+  })   AddButton(Tab2o, {
+     Name = "Speed Hub",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  end
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab1o, {
-     Name = "a",
-     Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+     Name = "Nhìn Con Cẹc Dùng Đi",
+     Options = {"Melee", "Sword", "Bloxfruit", "Gun"},
      Default = "Melee",
      Callback = function()
      end
@@ -90,7 +105,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
 ----- Section 
    
-   Section = AddSection(Tab1o, {"a"})          
+   Section = AddSection(Tab1o, {"Nhìn Con Cẹc Dùng Đi"})          
 
 ----- Paragraph 
                     
